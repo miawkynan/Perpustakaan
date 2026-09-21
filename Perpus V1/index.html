@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perpus — Perpustakaan Digital</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="/Perpus V1/js/app.js" defer></script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-konten">
+        <h1 class="header-judul">Perpus Hebat</h1>
+        <p class="header-tagline">Perpustakaan Digital Modern</p>
+      </div>
+    </header>
+
+    <main class="main">
+      <section class="seksi-filter">
+        <h2 class="seksi-judul">Koleksi Buku</h2>
+
+        <!-- Tambahan ke 3 -->
+        <div class="kotak-search">
+          <input
+            type="text"
+            id="input-search"
+            class="input-search"
+            placeholder="Cari Judul atau Penulis"
+            autocomplete="off"
+          />
+          <button
+            id="tombol-hapus-search"
+            class="tombol-hapus-search"
+            style="display: none"
+          >
+            ✕
+          </button>
+        </div>
+
+        <div id="tombol-filter" class="grup-filter">
+          <!-- Tombol filter akan dirender Javascript -->
+        </div>
+        <p id="info-jumlah" class="info-jumlah"></p>
+      </section>
+
+      <section class="seksi-buku">
+        <div id="kontainer-buku" class="grid-buku">
+          <!-- Kartu buku akan dirender Javascript -->
+        </div>
+      </section>
+
+      <!-- <section class="seksi-buku">
+        <h2 class="seksi-judul">Koleksi Buku</h2>
+        <div id="kontainer-buku" class="grid-buku"> -->
+      <!-- Kartu buku akan dirender oleh JavaScript -->
+      <!-- </div>
+      </section> -->
+
+      <!-- <section class="seksi-ringkasan">
+        <h2 class="seksi-judul">Ringkasan Koleksi</h2>
+        <div id="kontainer-ringkasan"> -->
+      <!-- Ringkasan akan dirender oleh JavaScript -->
+      <!-- </div>
+      </section> -->
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Perpus — Dibangun dengan JavaScript</p>
+    </footer>
+  </body>
+</html>

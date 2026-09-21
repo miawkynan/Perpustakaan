@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perpus — Perpustakaan Digital</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- HEADER HALAMAN -->
+  <header class="header">
+    <div class="header-inner">
+      <h1 class="header-judul">📚 Perpus</h1>
+      <p class="header-subjudul">Perpustakaan Digital</p>
+    </div>
+  </header>
+
+  <!-- KONTEN UTAMA -->
+  <main class="main">
+
+    <!-- SEKSI FILTER & PENCARIAN -->
+    <section class="seksi-filter">
+      <h2 class="seksi-judul">Koleksi Buku</h2>
+
+      <!-- Kotak Pencarian -->
+      <div class="kotak-pencarian">
+        <input 
+          type="text" 
+          id="input-search" 
+          class="input-search" 
+          placeholder="Cari judul buku atau nama penulis..." 
+          autocomplete="off"
+        >
+        <button 
+          id="tombol-hapus-search" 
+          class="tombol-hapus-search" 
+          style="display: none;" 
+          aria-label="Hapus pencarian"
+        >✕</button>
+      </div>
+
+      <!-- Tombol Filter Kategori -->
+      <div id="tombol-filter" class="grup-filter">
+        <!-- Tombol filter kategori dirender oleh JavaScript -->
+      </div>
+
+      <!-- Informasi Jumlah Buku -->
+      <p id="info-jumlah" class="info-jumlah">Menampilkan 0 buku</p>
+    </section>
+
+    <!-- SEKSI DAFTAR BUKU -->
+    <section class="seksi-koleksi">
+      <!-- Grid Tempat Kartu Buku -->
+      <div id="kontainer-buku" class="grid-buku">
+        <!-- Kartu buku dirender oleh JavaScript -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- SKRIP JAVASCRIPT -->
+  <script src="js/app.js"></script>
+</body>
+</html>
