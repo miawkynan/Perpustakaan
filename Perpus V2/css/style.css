@@ -279,3 +279,42 @@ body {
   display: block;
   margin-bottom: 12px;
 }
+/* Kartu header — judul + tombol favorit berdampingan */
+.kartu-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 8px;
+}
+.kartu-header .kartu-judul {
+  flex: 1;
+}
+/* Tombol favorit */
+  .tombol-favorit {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 2px 4px;
+  border-radius: 6px;
+  line-height: 1;
+  transition: transform 0.15s;
+  flex-shrink: 0;
+}
+.tombol-favorit:hover {
+  transform: scale(1.2);
+}
+.tombol-favorit.aktif {
+  animation: detak 0.3s ease;
+}
+
+@keyframes detak {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.35); }
+  100% { transform: scale(1); }
+}
+/* Kartu yang difavoritkan */
+.kartu-buku.favorit {
+  border-top-color: #f59e0b;
+  box-shadow: 0 2px 8px rgba(245, 158, 11, 0.2);
+}
